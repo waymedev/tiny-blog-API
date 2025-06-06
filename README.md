@@ -1,4 +1,5 @@
 # tiny-blog-API
+
 A tiny blog backend server demo
 
 ## API 文档
@@ -11,28 +12,21 @@ A tiny blog backend server demo
 
 测试登录用户名 `test` 密码 `test`
 
-#### step 1
-
-准备数据库
+#### step 1 准备数据库
 
 导入 `DDL.sql` 到 MySQL
 
-#### step 2
+#### step 2 配置文件
 
 复制 `/src/main/resources/application.properties.demo` 为 `application.properties`
 
-#### step 3
-
 补充 MySQL 和 Redis 链接信息
 
-### step 4
+### step 3 打包启动
 
 在项目主文件夹下 `mvn package`
 
-### step 5
-
 `cd target && java -jar tiny-blog-api-0.0.1-SNAPSHOT.jar`
-
 
 ## 系统设计
 
@@ -65,5 +59,3 @@ A tiny blog backend server demo
 - [x] 文章评论
 - [x] 文章点赞
 - [x] 全文搜索
-
-
